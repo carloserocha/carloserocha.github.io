@@ -2,72 +2,84 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <title>*~ Carlos Rocha ~*</title>
-    <link rel="canonical" href="" />
-    <link rel="icon" type="image/ico" href="favicon.ico">
-    <meta name="theme-color" content="#0d0e47" />
-    <meta property="og:type" content="profile" />
-    <meta name="twitter:card" content="profile" />
-    <meta name="author" content="Carlos Rocha">
-    <meta property="og:title" content="*~ Carlos Rocha ~*" />
-    <meta name="Description" content="Back-end Developer &#9749 🛠" />
-    <meta name="description" content="Back-end Developer &#9749 🛠">
-    <meta property="og:description" content="Developer &#9749 🛠" />
-    <meta name="twitter:site" content="@crwlos" />
-    <meta name="twitter:creator" content="@crwlos" />
+    <meta name="viewport" content="width=720, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/icon" href="/favicon.ico">
+    <meta charset="utf-8">
+    <title>carlos's website</title>
+    <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script type="text/javascript" src="click_mouse.js"></script>
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body id="content">
-    <div class="container-fluid text-center">
-        <img class="fotis" src="avatar.jpg" height="50" width="150">
-        <h2>Carlos Eduardo Rocha</h2>
-        <h3>Back-end Developer &#9749 🛠</h3>
-        <p>
-            <br>Level: <span id="age"></span> &#10024
-            <br>Type: Cute / Hacker
-            <br>Class: At High School
-            <br>Location: Blumenau, Brazil
-            <br>INTP-T 🌙
-        </p>
-        <nav id="row">
-            <ul>
-                <i>
-                <div class="col-xs-2 col-md-1">
-                    <li><a href="https://www.linkedin.com/in/carlos-rocha-b20623164" target="_blank">Linkedin</a></li>
-                </div>
-                <div class="col-xs-2 col-md-1">
-                    <li> <a href="https://github.com/carloserocha" target="_blank">GitHub</a></li>
-                </div>
-                <div class="col-xs-2 col-md-1">
-                    <li><a href="https://telegram.me/crwlos" target="_blank">Telegram</a></li>
-                </div>
-                <div class="col-xs-2 col-md-1">
-                    <li><a href="https://twitter.com/crwlos" target="_blank">Twitter</a></li>
-                </div>
-                <div class="col-xs-2 col-md-1">
-                    <li><a href="https://open.spotify.com/user/" target="_blank">Spotify</a></li>
-                </div>
-                <div class="col-xs-2 col-md-1">
-                    <li><a href="https://instagram.com/cyrlos/" target="_blank">Instagram</a></li>
-                </div>
-            </i>
-            </ul>
-        </nav>
-        <br><br><br>
-    </div>
+<body>
+    <div class="site">
+        <div class="content">
+            <main>
+                <!-- begin subtemplate -->
+                <header class="term">
+                    <!-- TODO: make these into <p>s? -->
+                    <span class="prompt host">carlos.website</span>
+                    <span class="prompt path">~</span> ls
+                    <nav class="term-grid">
 
-    <script>
-        // Dynamic Age
-        const today = new Date()
-        const birthday = new Date("2002/01/27")
-        const year = today.getFullYear()
-        const myAge = Math.floor(Math.abs(today - birthday) / 1000 / 60 / 60 / 24 / 365)
-        document.getElementById("age").innerHTML = myAge
-    </script>
+                        <span>
+                            <a class="term-nav dir" href="https://github.com/carloserocha">code</a>
+                        </span>
+
+                        <span>
+                            <a class="term-nav dir" href="etc.html">etc</a>
+                        </span>
+
+                        <span>
+                            <a class="term-nav dir" href="https://twitter.com/crwlos">twitter</a>
+                        </span>
+
+                        <span>
+                            <a class="term-nav file" href="index.html">about.txt</a>
+                        </span>
+
+                        <span>
+                            <a class="term-nav file" href="resume.html">resume(in coming)</a>
+                        </span>
+
+                    </nav>
+                    <span class="prompt host">carlos.website</span>
+                    <span class="prompt path">~/</span> cat about.txt
+                </header>
+                <main>
+                    <!-- begin content -->
+                    <h1 id="carlos-rocha">carlos eduardo rocha</h1>
+
+                    <h2 id="who">Who?</h2>
+
+                    <p>I’m a <a href="https://github.com/carloserocha">programmer</a> and occasional <a href="https://www.youtube.com/channel/UCMVgIsb9Gn97l8OdWLpYY7w">musician</a>, based in Blumenau, Brazil. 
+                        I’m interested in functional programming, systems software, and programming
+                        languages. Professionally, I write integration application at 
+                        <a href="https://integra.do">integra.do</a>.</p>
+
+                    <h2 id="contact">Contact</h2>
+                    <ul>
+                        <li>e-mail:
+                            <!--  carloserocha (AT) gmail (DOT) com or --> <em>carloserocha (AT) gmail (DOT) com</em></li>
+                        <li>address &amp; telephone number available by request</li>
+                        <li><a class="dir" href="https://twitter.com/crwlos">personal twitter</a></li>
+                    </ul>
+
+                    <!-- end content -->
+                </main>
+                <footer class="term">
+                    <span class="prompt host"></span>
+                    <span class="prompt path">~/</span>
+                    <span class="blinking-cursor">_</span>
+                </footer>
+                <!-- end subtemplate -->
+            </main>
+        </div>
+    </div>
 </body>
 
 </html>
