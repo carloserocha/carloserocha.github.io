@@ -1236,3 +1236,8 @@ a.pagination-item:hover {
         border-bottom-right-radius: 4px
     }
 }
+
+code {
+    background-color: white;
+    color: grey;
+}

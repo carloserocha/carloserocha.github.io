@@ -16,9 +16,11 @@
 </head>
 
 <body>
+    <div class="site">
+    
     <header class="term">
         <span class="prompt host">carlos.website</span>
-        <span class="prompt path">~</span> ls
+        <span class="prompt path">~/resume</span> ls
     </header>
     <main>
         <nav class="term-grid">
@@ -28,13 +30,53 @@
             <span>
                 <a class="term-nav dir" href="resume.html">.</a>
             </span>
+            <span>
+                <a class="term-nav file">about.md</a>
+            </span>
         </nav>
     </main>
     <footer class="term">
         <span class="prompt host">carlos.website</span>
-        <span class="prompt path">~/resume</span>
-        <span class="blinking-cursor">_</span>
+        <span class="prompt path">~/resume</span> cat about.md
+        <br><br>
+        <code>
+            Hi everyone.<br>
+            <br>
+            I'm Carlos (<span id="age"></span>). I write code in NodeJS (currently) with MongoDB at Database.<br>
+            <br>
+            Areas of Interest<br>
+                Low-Level Programming, Operating Systems and Data Analysis<br>
+                <br>
+            Languages<br>
+                Familiar with PHP, Perl, Bash, Python, Pascal, Ruby and Rust.<br>
+                <br>
+            Experience<br>
+                <i>2018 - present</i> => Systems Analyst at Integra.do<br>
+                <br>
+            Education<br>
+                self-taught at present
+                <br>
+                <br>
+            My love and life is in the code.<br>
+        </code>
+        <br>
+        <footer class="term">
+            <span class="prompt host">carlos.website</span>
+            <span class="prompt path">~/resume</span>
+            <span class="blinking-cursor">_</span>
+        </footer>
     </footer>
+    </div>
 </body>
+
+<script>
+    // Dynamic Age
+    const today = new Date()
+    const birthday = new Date("2002/01/27")
+    const year = today.getFullYear()
+    const myAge = Math.floor(Math.abs(today - birthday) / 1000 / 60 / 60 / 24 / 365)
+
+    document.getElementById("age").innerHTML = myAge
+</script>
 
 </html>
